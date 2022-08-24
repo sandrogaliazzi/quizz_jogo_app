@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Quizz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score-wrapper">
+        <p class="score-text">score:</p>
+        <p class="score"></p>
+      </div>
+      <div class="card-question">
+        <div class="range">
+          <label for="question-volume"
+            >Selecione o número de questões: <span id="range">10</span></label
+          >
+          <input
+            type="range"
+            name="questions-volume"
+            id="question-volume"
+            max="300"
+            min="1"
+            value="50"
+            step="1"
+          />
+        </div>
+        <button class="btn start">Jogar</button>
+        <div class="question hidden">
+          <h2 id="question">Quanto é 2 + 2?</h2>
+          <ul class="option-list">
+            <!-- respostas -->
+          </ul>
+          <div class="controls">
+            <button class="btn submit" disabled>Confirmar</button>
+            <button class="btn next hidden">Próxima pergunta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
